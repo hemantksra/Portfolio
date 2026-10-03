@@ -216,7 +216,7 @@ export const projectsData = [
     title: "Developer Portfolio",
     badge: "Frontend Engineering",
     description:
-      "Personal portfolio built with React and Vite to showcase projects, technical interests, and leadership experience. Designed with responsive layouts, accessibility considerations, and performance-focused interactions.",
+      "Designed and developed a responsive portfolio application using React and Vite, featuring custom interactive visualizations, accessibility improvements, SEO enhancements, and performance-focused UI architecture.",
     tags: ["React", "Vite", "JavaScript", "CSS"],
     github: "https://github.com/hemantksra/Portfolio",
     featured: true,
@@ -228,7 +228,7 @@ export const projectsData = [
     title: "Terminal Vector Graphics Editor",
     badge: "Systems Programming",
     description:
-      "A terminal-based vector graphics editor written in C using ncurses. Supports interactive shape creation, zooming, panning, mouse input, and undo/redo functionality through a modular MVC-inspired architecture.",
+      "Built a terminal-based vector graphics editor in C using ncurses, implementing interactive rendering, mouse-driven editing, zoom and pan controls, undo/redo functionality, and a modular MVC-inspired architecture.",
     tags: ["C", "ncurses", "Graphics Programming", "Data Structures"],
     github: "https://github.com/hemantksra/Terminal-Vector-Graphics",
     featured: true,
@@ -240,9 +240,7 @@ export const projectsData = [
     title: "Simple Line Editor",
     badge: "Core Computer Science",
     description:
-      "A command-driven text editor written in C featuring dynamic document storage, search, find-and-replace operations, undo support, and document statistics within a terminal interface.",
-    problemSolved:
-      "Built to explore text manipulation, memory management, and command parsing while implementing editor functionality from first principles.",
+      "Developed a command-driven text editor in C featuring dynamic memory management, document storage, search and replace operations, undo functionality, command parsing, and real-time document statistics.",
     tags: [
       "C",
       "Memory Management",
