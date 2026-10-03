@@ -130,8 +130,6 @@ export const projectsData = [
     badge: "Frontend Engineering",
     description:
       "Personal portfolio built with React and Vite to showcase projects, technical interests, and leadership experience. Designed with responsive layouts, accessibility considerations, and performance-focused interactions.",
-    problemSolved:
-      "Created a central platform to present technical work, leadership experience, and career goals while optimizing animations, responsiveness, and user experience across devices.",
     tags: ["React", "Vite", "JavaScript", "CSS"],
     github: "https://github.com/hemantksra/Portfolio",
     featured: true,
@@ -144,8 +142,6 @@ export const projectsData = [
     badge: "Systems Programming",
     description:
       "A terminal-based vector graphics editor written in C using ncurses. Supports interactive shape creation, zooming, panning, mouse input, and undo/redo functionality through a modular MVC-inspired architecture.",
-    problemSolved:
-      "Demonstrates how graphical editing concepts can be implemented inside a terminal environment using custom rendering algorithms, event handling, and state management.",
     tags: ["C", "ncurses", "Graphics Programming", "Data Structures"],
     github: "https://github.com/hemantksra/Terminal-Vector-Graphics",
     featured: true,

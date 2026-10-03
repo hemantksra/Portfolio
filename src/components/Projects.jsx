@@ -1,6 +1,6 @@
-import React from 'react';
-import { projectsData, personalInfo } from '../data/portfolioData';
-import { GithubIcon, ExternalLinkIcon, ArrowUpRightIcon } from './Icons';
+import React from "react";
+import { projectsData, personalInfo } from "../data/portfolioData";
+import { GithubIcon, ExternalLinkIcon, ArrowUpRightIcon } from "./Icons";
 
 export default function Projects() {
   return (
@@ -15,10 +15,15 @@ export default function Projects() {
           <h2 className="section-title reveal delay-1">Projects</h2>
         </div>
         <div>
-          <p className="section-desc reveal delay-2" style={{ alignSelf: 'end' }}>
-            A selection of projects focused on software development, systems thinking, and practical problem solving. Each project reflects hands-on learning and real implementation experience.
+          <p
+            className="section-desc reveal delay-2"
+            style={{ alignSelf: "end" }}
+          >
+            A selection of projects focused on software development, systems
+            thinking, and practical problem solving. Each project reflects
+            hands-on learning and real implementation experience.
           </p>
-          <div className="reveal delay-3" style={{ marginTop: '16px' }}>
+          <div className="reveal delay-3" style={{ marginTop: "16px" }}>
             <a
               href={personalInfo.links.github}
               target="_blank"
@@ -48,14 +53,14 @@ export default function Projects() {
             <p className="project-desc">{project.description}</p>
 
             {project.highlightMetric && (
-              <div className="project-metric">
-                ◆ {project.highlightMetric}
-              </div>
+              <div className="project-metric">◆ {project.highlightMetric}</div>
             )}
 
             <div className="project-tags">
               {project.tags.map((tag, ti) => (
-                <span key={ti} className="project-tag">{tag}</span>
+                <span key={ti} className="project-tag">
+                  {tag}
+                </span>
               ))}
             </div>
 
