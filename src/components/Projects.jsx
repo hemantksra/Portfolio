@@ -70,19 +70,6 @@ export default function Projects() {
                 <GithubIcon size={13} />
                 Source
               </a>
-              {project.demo && project.demo !== '#' && (
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link-btn project-link-demo"
-                  title="View live demo"
-                >
-                  <ExternalLinkIcon size={13} />
-                  Demo
-                  <ArrowUpRightIcon size={11} />
-                </a>
-              )}
             </div>
           </article>
         ))}

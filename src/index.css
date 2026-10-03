@@ -1285,14 +1285,6 @@ code { font-family: var(--font-mono); }
 
 .project-link-github:hover { color: var(--text-primary); }
 
-.project-link-demo {
-  color: var(--terracotta);
-  background: var(--terracotta-muted);
-  border: 1px solid var(--terracotta-bdr);
-}
-
-.project-link-demo:hover { opacity: 0.85; }
-
 /* ──────────────────────────────────────────────────────────
    CONTACT SECTION
    ────────────────────────────────────────────────────────── */

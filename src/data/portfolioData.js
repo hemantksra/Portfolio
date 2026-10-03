@@ -134,7 +134,6 @@ export const projectsData = [
       "Created a central platform to present technical work, leadership experience, and career goals while optimizing animations, responsiveness, and user experience across devices.",
     tags: ["React", "Vite", "JavaScript", "CSS"],
     github: "https://github.com/hemantksra/Portfolio",
-    demo: "#",
     featured: true,
     highlightMetric: "Interactive ThinkingCanvas & optimized performance"
   },
@@ -149,7 +148,6 @@ export const projectsData = [
       "Demonstrates how graphical editing concepts can be implemented inside a terminal environment using custom rendering algorithms, event handling, and state management.",
     tags: ["C", "ncurses", "Graphics Programming", "Data Structures"],
     github: "https://github.com/hemantksra/Terminal-Vector-Graphics",
-    demo: "#",
     featured: true,
     highlightMetric: "Interactive terminal graphics with undo/redo support"
   },
@@ -164,7 +162,6 @@ export const projectsData = [
       "Built to explore text manipulation, memory management, and command parsing while implementing editor functionality from first principles.",
     tags: ["C", "Memory Management", "Data Structures", "Terminal Applications"],
     github: "https://github.com/hemantksra/Simple-Line-Editor",
-    demo: "#",
     featured: true,
     highlightMetric: "Dynamic document storage with undo functionality"
   }
