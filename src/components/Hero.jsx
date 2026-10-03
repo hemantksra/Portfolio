@@ -1,19 +1,18 @@
-import React from 'react';
-import { personalInfo } from '../data/portfolioData';
-import { GithubIcon, LinkedinIcon, MailIcon, ArrowUpRightIcon } from './Icons';
-import ThinkingCanvas from './ThinkingCanvas';
+import React from "react";
+import { personalInfo } from "../data/portfolioData";
+import { GithubIcon, LinkedinIcon, MailIcon, ArrowUpRightIcon } from "./Icons";
+import ThinkingCanvas from "./ThinkingCanvas";
 
 export default function Hero() {
   const scrollTo = (e, href) => {
     e.preventDefault();
     const target = document.querySelector(href);
-    if (target) target.scrollIntoView({ behavior: 'smooth' });
+    if (target) target.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <section id="hero" className="hero-section">
       <div className="hero-grid">
-
         {/* ── Left: Profile copy ── */}
         <div className="hero-left">
           {/* Status pill */}
@@ -22,24 +21,22 @@ export default function Hero() {
               <span className="status-pulse-ring" />
               <span className="status-pulse-dot" />
             </div>
-            2nd Year CSE @ REVA University • PR & Marketing Lead @ OS Code Club
+            B.Tech CSE '29 @ REVA University • PR & Marketing Lead @ OS Code
+            Club
           </div>
 
           {/* Name */}
           <h1 className="hero-name reveal delay-2">
-            Hemant{' '}
-            <span className="gradient-text">Saxena</span>
+            Hemant <span className="gradient-text">Saxena</span>
           </h1>
 
           {/* Title */}
           <p className="hero-title reveal delay-3">
-            Computer Science & Engineering Undergraduate
+            Aspiring Software Engineer • Systems & Developer Tools Enthusiast
           </p>
 
           {/* Tagline */}
-          <p className="hero-tagline reveal delay-3">
-            {personalInfo.tagline}
-          </p>
+          <p className="hero-tagline reveal delay-3">{personalInfo.tagline}</p>
 
           {/* Focus badges */}
           <div className="hero-badges reveal delay-4">
@@ -89,7 +86,7 @@ export default function Hero() {
 
             <a
               href="#contact"
-              onClick={(e) => scrollTo(e, '#contact')}
+              onClick={(e) => scrollTo(e, "#contact")}
               className="btn btn-ghost"
               id="cta-contact"
             >
@@ -103,7 +100,6 @@ export default function Hero() {
         <div className="hero-right reveal-right delay-3">
           <ThinkingCanvas />
         </div>
-
       </div>
     </section>
   );

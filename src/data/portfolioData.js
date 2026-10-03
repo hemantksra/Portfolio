@@ -11,11 +11,11 @@ export const personalInfo = {
     "B.Tech CSE @ REVA University ('29) | PR & Marketing Lead @ OS Code Club | Java, Python, C, SQL | Exploring Software Engineering & AI Agents",
   university: "REVA University",
   location: "Bengaluru, Karnataka, India",
-  year: "2nd Year",
+  year: "B.Tech CSE '29",
   graduationYear: "2029",
   batch: "2025 – 2029",
   tagline:
-    "Curious builder with strong computer science fundamentals, passionate about low-level systems, software development, and exploring emerging tech.",
+    "Building software from first principles — exploring systems programming, developer tools, and modern software engineering through hands-on projects.",
   status:
     "PR & Marketing Lead @ OS Code Club • Open to Collaborative Opportunities",
   email: "hemantksra@gmail.com",

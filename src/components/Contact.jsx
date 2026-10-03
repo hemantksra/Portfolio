@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
-import { personalInfo } from '../data/portfolioData';
-import { GithubIcon, LinkedinIcon, MailIcon, CopyIcon, CheckIcon, ArrowUpRightIcon } from './Icons';
+import React, { useState } from "react";
+import { personalInfo } from "../data/portfolioData";
+import {
+  GithubIcon,
+  LinkedinIcon,
+  MailIcon,
+  CopyIcon,
+  CheckIcon,
+  ArrowUpRightIcon,
+} from "./Icons";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
-  const [formState, setFormState] = useState({ name: '', message: '' });
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [submitted, setSubmitted] = useState(false);
 
   const handleCopy = async () => {
@@ -21,9 +32,16 @@ export default function Contact() {
     e.preventDefault();
     if (!formState.name || !formState.message) return;
     // Open mailto with pre-filled body
-    const subject = encodeURIComponent(`Hey Hemant — message from ${formState.name}`);
-    const body = encodeURIComponent(formState.message);
-    window.open(`mailto:${personalInfo.email}?subject=${subject}&body=${body}`, '_blank');
+    const subject = encodeURIComponent(
+      `Hey Hemant — message from ${formState.name}`,
+    );
+    const body = encodeURIComponent(
+      `Sender Email: ${formState.email}\n\n${formState.message}`,
+    );
+    window.open(
+      `mailto:${personalInfo.email}?subject=${subject}&body=${body}`,
+      "_blank",
+    );
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
   };
@@ -40,13 +58,13 @@ export default function Contact() {
         {/* ── Left ── */}
         <div className="contact-left">
           <h2 className="contact-headline reveal delay-1">
-            Open to{' '}
-            <span className="gradient-text">conversations.</span>
+            Open to <span className="gradient-text">conversations.</span>
           </h2>
 
           <p className="contact-subtext reveal delay-2">
-            Whether it's a collaboration, an open-source project, or just a chat about
-            systems programming and software — feel free to reach out on any platform below.
+            Whether it's a collaboration, an open-source project, or just a chat
+            about systems programming and software — feel free to reach out on
+            any platform below.
           </p>
 
           {/* Social contact cards */}
@@ -88,7 +106,7 @@ export default function Contact() {
             </a>
 
             {/* Email card */}
-            <div className="contact-card" style={{ cursor: 'default' }}>
+            <div className="contact-card" style={{ cursor: "default" }}>
               <div className="contact-card-icon email-icon">
                 <MailIcon size={20} />
               </div>
@@ -98,7 +116,7 @@ export default function Contact() {
               </div>
               <button
                 type="button"
-                className={`btn-copy${copied ? ' copied' : ''}`}
+                className={`btn-copy${copied ? " copied" : ""}`}
                 onClick={handleCopy}
                 aria-label="Copy email address"
                 title="Copy email"
@@ -124,27 +142,57 @@ export default function Contact() {
           <h3 className="contact-form-title">Send a quick message</h3>
           <form onSubmit={handleSubmit} id="contact-form" noValidate>
             <div className="form-field">
-              <label htmlFor="contact-name" className="form-label">Your name</label>
+              <label htmlFor="contact-name" className="form-label">
+                Your name
+              </label>
               <input
                 id="contact-name"
                 type="text"
                 className="form-input"
                 placeholder="e.g. Alex Johnson"
                 value={formState.name}
-                onChange={(e) => setFormState({ ...formState, name: e.target.value })}
+                onChange={(e) =>
+                  setFormState({ ...formState, name: e.target.value })
+                }
                 required
                 autoComplete="name"
               />
             </div>
 
             <div className="form-field">
-              <label htmlFor="contact-msg" className="form-label">Message</label>
+              <label htmlFor="contact-email" className="form-label">
+                Email
+              </label>
+
+              <input
+                id="contact-email"
+                type="email"
+                className="form-input"
+                placeholder="alex@example.com"
+                value={formState.email}
+                onChange={(e) =>
+                  setFormState({
+                    ...formState,
+                    email: e.target.value,
+                  })
+                }
+                required
+                autoComplete="email"
+              />
+            </div>
+
+            <div className="form-field">
+              <label htmlFor="contact-msg" className="form-label">
+                Message
+              </label>
               <textarea
                 id="contact-msg"
                 className="form-textarea"
                 placeholder="Hey Hemant, I'd love to..."
                 value={formState.message}
-                onChange={(e) => setFormState({ ...formState, message: e.target.value })}
+                onChange={(e) =>
+                  setFormState({ ...formState, message: e.target.value })
+                }
                 required
                 rows={5}
               />
@@ -153,9 +201,11 @@ export default function Contact() {
             <button
               type="submit"
               className="form-submit"
-              disabled={!formState.name || !formState.message}
+              disabled={
+                !formState.name || !formState.email || !formState.message
+              }
             >
-              {submitted ? '✓ Opening email client...' : 'Send Message →'}
+              {submitted ? "✓ Opening email client..." : "Send Message →"}
             </button>
           </form>
         </div>
