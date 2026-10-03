@@ -120,8 +120,8 @@ export const skillsData = {
 };
 
 /**
- * FEATURED PROJECTS (Placeholder Module)
- * Note: Keeping projects modular as requested; user will update these later.
+ * FEATURED PROJECTS
+ * Real portfolio projects.
  */
 export const projectsData = [
   {

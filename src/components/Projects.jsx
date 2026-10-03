@@ -16,7 +16,7 @@ export default function Projects() {
         </div>
         <div>
           <p className="section-desc reveal delay-2" style={{ alignSelf: 'end' }}>
-            Placeholder projects are shown below — real builds coming soon. Each demonstrates a core technical focus area.
+            A selection of projects focused on software development, systems thinking, and practical problem solving. Each project reflects hands-on learning and real implementation experience.
           </p>
           <div className="reveal delay-3" style={{ marginTop: '16px' }}>
             <a
