@@ -1,6 +1,13 @@
-import React from 'react';
-import { personalInfo, aboutData } from '../data/portfolioData';
-import { CpuIcon, CodeIcon, TerminalIcon, UsersIcon, ArrowUpRightIcon, LinkedinIcon } from './Icons';
+import React from "react";
+import { personalInfo, aboutData } from "../data/portfolioData";
+import {
+  CpuIcon,
+  CodeIcon,
+  TerminalIcon,
+  UsersIcon,
+  ArrowUpRightIcon,
+  LinkedinIcon,
+} from "./Icons";
 
 const PILLAR_ICONS = {
   cpu: CpuIcon,
@@ -28,7 +35,7 @@ export default function About() {
         <div>
           <h3 className="about-headline reveal">{aboutData.headline}</h3>
 
-          <div style={{ marginTop: '20px' }}>
+          <div style={{ marginTop: "20px" }}>
             {aboutData.bio.map((paragraph, i) => (
               <p key={i} className={`about-paragraph reveal delay-${i + 1}`}>
                 {paragraph}
@@ -41,7 +48,9 @@ export default function About() {
             <div className="leadership-card reveal delay-2">
               <div className="leadership-card-top">
                 <div className="lc-badges">
-                  <span className="lc-badge lc-badge-role">Club Leadership</span>
+                  <span className="lc-badge lc-badge-role">
+                    Club Leadership
+                  </span>
                   <span className="lc-badge lc-badge-active">Active Role</span>
                 </div>
                 <a
@@ -59,7 +68,8 @@ export default function About() {
 
               <h4 className="leadership-role">{leadershipExperience.title}</h4>
               <p className="leadership-org">
-                {leadershipExperience.organization} • {leadershipExperience.period}
+                {leadershipExperience.organization} •{" "}
+                {leadershipExperience.period}
               </p>
 
               <ul className="leadership-list">
@@ -74,13 +84,18 @@ export default function About() {
           <div className="academic-card reveal delay-3">
             <div className="academic-info">
               <p className="academic-badge">Academic Status</p>
-              <h4 className="academic-degree">B.Tech in Computer Science & Engineering</h4>
+              <h4 className="academic-degree">
+                B.Tech in Computer Science & Engineering
+              </h4>
               <p className="academic-school">
-                {personalInfo.university}, {personalInfo.location} · Class of {personalInfo.graduationYear} (Batch {personalInfo.batch})
+                {personalInfo.university}, {personalInfo.location} · Class of{" "}
+                {personalInfo.graduationYear} (Batch {personalInfo.batch})
               </p>
             </div>
             <div className="academic-status-note">
-              Resume available upon request
+              Building strong foundations in systems, software engineering, and
+              problem solving through hands-on projects and community
+              leadership.
             </div>
           </div>
         </div>
