@@ -21,7 +21,6 @@ export const personalInfo = {
   links: {
     github: "https://github.com/hemantksra",
     linkedin: "https://www.linkedin.com/in/hemantsaxenaksra/",
-    resume: "#", // Drop your resume PDF into public folder and link here
   }
 };
 
@@ -127,39 +126,47 @@ export const skillsData = {
 export const projectsData = [
   {
     id: "project-1",
-    title: "Low-Level Memory Allocator & Cache Simulator",
-    badge: "Systems & Architecture",
-    description: "A lightweight custom heap memory allocator simulation implementing segregated free lists and first-fit allocation policies to analyze memory fragmentation and cache line locality.",
-    problemSolved: "Simulates memory block splitting and coalescing in C to demonstrate how operating systems minimize internal fragmentation and manage raw pointer arithmetic.",
-    tags: ["C", "Systems Programming", "Memory Management", "Algorithms"],
-    github: "https://github.com/hemantksra",
+    title: "Developer Portfolio",
+    badge: "Frontend Engineering",
+    description:
+      "Personal portfolio built with React and Vite to showcase projects, technical interests, and leadership experience. Designed with responsive layouts, accessibility considerations, and performance-focused interactions.",
+    problemSolved:
+      "Created a central platform to present technical work, leadership experience, and career goals while optimizing animations, responsiveness, and user experience across devices.",
+    tags: ["React", "Vite", "JavaScript", "CSS"],
+    github: "https://github.com/hemantksra/Portfolio",
     demo: "#",
     featured: true,
-    highlightMetric: "Sub-microsecond allocation cycle simulation"
+    highlightMetric: "Interactive ThinkingCanvas & optimized performance"
   },
+
   {
     id: "project-2",
-    title: "Algorithmic Graph & Pathfinding Engine",
-    badge: "Data Structures & DSA",
-    description: "An interactive computational graph visualizer implementing Dijkstra's algorithm, A* search, and Breadth-First Search to demonstrate real-time graph traversal and heuristic optimization.",
-    problemSolved: "Bridges the gap between theoretical algorithm analysis and visual execution, providing step-by-step state inspection of priority queues and adjacency matrices.",
-    tags: ["Java", "Data Structures", "Graph Theory", "Algorithms"],
-    github: "https://github.com/hemantksra",
+    title: "Terminal Vector Graphics Editor",
+    badge: "Systems Programming",
+    description:
+      "A terminal-based vector graphics editor written in C using ncurses. Supports interactive shape creation, zooming, panning, mouse input, and undo/redo functionality through a modular MVC-inspired architecture.",
+    problemSolved:
+      "Demonstrates how graphical editing concepts can be implemented inside a terminal environment using custom rendering algorithms, event handling, and state management.",
+    tags: ["C", "ncurses", "Graphics Programming", "Data Structures"],
+    github: "https://github.com/hemantksra/Terminal-Vector-Graphics",
     demo: "#",
     featured: true,
-    highlightMetric: "O((V + E) log V) optimized traversal"
+    highlightMetric: "Interactive terminal graphics with undo/redo support"
   },
+
   {
     id: "project-3",
-    title: "Concurrent Task Runner & CLI Engine",
-    badge: "Software Development",
-    description: "A command-line task execution tool designed to orchestrate multi-step build pipelines, process isolation, and automated script workflows with structured logging.",
-    problemSolved: "Solves repetitive developer task execution through an intuitive configuration syntax and robust child-process error handling.",
-    tags: ["Python", "CLI Tooling", "OS Subprocesses", "Developer Experience"],
-    github: "https://github.com/hemantksra",
+    title: "Simple Line Editor",
+    badge: "Core Computer Science",
+    description:
+      "A command-driven text editor written in C featuring dynamic document storage, search, find-and-replace operations, undo support, and document statistics within a terminal interface.",
+    problemSolved:
+      "Built to explore text manipulation, memory management, and command parsing while implementing editor functionality from first principles.",
+    tags: ["C", "Memory Management", "Data Structures", "Terminal Applications"],
+    github: "https://github.com/hemantksra/Simple-Line-Editor",
     demo: "#",
     featured: true,
-    highlightMetric: "Zero-dependency lightweight runner"
+    highlightMetric: "Dynamic document storage with undo functionality"
   }
 ];
 

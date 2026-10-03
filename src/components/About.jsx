@@ -79,16 +79,9 @@ export default function About() {
                 {personalInfo.university}, {personalInfo.location} · Class of {personalInfo.graduationYear} (Batch {personalInfo.batch})
               </p>
             </div>
-            <a
-              href={personalInfo.links.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-resume"
-              title="View CV (link when available)"
-            >
-              CV
-              <ArrowUpRightIcon size={12} />
-            </a>
+            <div className="academic-status-note">
+              Resume available upon request
+            </div>
           </div>
         </div>
 
