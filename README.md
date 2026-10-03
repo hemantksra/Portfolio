@@ -1,19 +1,62 @@
-# React + Vite
+# Hemant Saxena – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal developer portfolio built with React and Vite.
 
-Currently, two official plugins are available:
+This website showcases my projects, technical interests, leadership experience, and contact information in a fast, accessible, and responsive web experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Website
 
-## React Compiler
+Coming soon.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## About
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+I enjoy building software that combines solid computer science fundamentals with practical problem solving, from developer tools and systems-focused applications to modern web experiences.
 
-## Expanding the Oxlint configuration
+## Featured Projects
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Developer Portfolio
+
+A responsive portfolio website built with React and Vite, focused on accessibility, performance, and recruiter-friendly presentation.
+
+### Terminal Vector Graphics Editor
+
+A systems-oriented graphics editor built for terminal environments, exploring rendering, geometry handling, and interactive tooling concepts.
+
+### Simple Line Editor
+
+A lightweight text editing project focused on understanding editor internals, input handling, and core software engineering principles.
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+
+## Features
+
+- Responsive design
+- Accessibility-focused interactions
+- Keyboard navigation support
+- Structured data (JSON-LD)
+- Social preview support
+- Smooth animations and transitions
+- Recruiter-focused project presentation
+
+## Leadership
+
+**PR & Marketing Lead — OS Code Club**
+
+- Organized technical events and community initiatives
+- Contributed to club outreach and engagement activities
+- Collaborated with student developers and leadership teams
+
+## Contact
+
+- LinkedIn: https://www.linkedin.com/in/hemant-saxena
+- GitHub: https://github.com/hemantksra
+
+---
+
+Built by Hemant Saxena using React + Vite.
