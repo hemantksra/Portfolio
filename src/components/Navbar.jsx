@@ -36,7 +36,13 @@ export default function Navbar() {
     e.preventDefault();
     setMobileOpen(false);
     const target = document.querySelector(href);
-    if (target) target.scrollIntoView({ behavior: 'smooth' });
+    if (target) {
+    target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+      target.focus({ preventScroll: true });
+    }
   };
 
   return (
@@ -123,7 +129,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile drawer */}
-      <div className={`mobile-drawer${mobileOpen ? ' open' : ''}`} role="navigation" aria-label="Mobile navigation">
+      <div className={`mobile-drawer${mobileOpen ? ' open' : ''}`} role="navigation" aria-label="Mobile navigation" aria-hidden={!mobileOpen}>
         <ul className="mobile-nav-list">
           {navLinks.map(({ label, href }) => (
             <li key={href}>
@@ -131,6 +137,7 @@ export default function Navbar() {
                 href={href}
                 onClick={(e) => scrollTo(e, href)}
                 className="mobile-nav-link"
+                tabIndex={mobileOpen ? 0 : -1}
               >
                 {label}
               </a>
@@ -143,6 +150,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             className="mobile-social-chip"
+            tabIndex={mobileOpen ? 0 : -1}
           >
             <GithubIcon size={14} />
             GitHub
@@ -153,6 +161,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             className="mobile-social-chip"
+            tabIndex={mobileOpen ? 0 : -1}
           >
             <LinkedinIcon size={14} />
             LinkedIn

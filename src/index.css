@@ -1523,3 +1523,56 @@ code { font-family: var(--font-mono); }
   .hero-ctas .btn { width: 100%; justify-content: center; }
   .footer-inner { flex-direction: column; text-align: center; }
 }
+
+/* ==========================================
+   Accessibility: Keyboard Focus States
+========================================== */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+/* Navbar */
+
+.nav-link:focus-visible,
+.nav-cta:focus-visible,
+.nav-icon-btn:focus-visible,
+.mobile-nav-link:focus-visible,
+.mobile-social-chip:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 4px;
+}
+
+/* Project Cards */
+
+.project-card a:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 4px;
+}
+
+/* Contact Section */
+
+.contact-link:focus-visible,
+.copy-email-btn:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 4px;
+}
+
+/* ==========================================
+   Accessibility: Visible Keyboard Focus
+========================================== */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--terracotta);
+  outline-offset: 4px;
+  border-radius: 8px;
+
+  box-shadow:
+    0 0 0 4px rgba(209, 107, 78, 0.25);
+}
