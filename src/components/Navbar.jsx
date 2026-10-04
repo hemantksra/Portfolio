@@ -120,7 +120,7 @@ export default function Navbar() {
             type="button"
             className="mobile-toggle"
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+            aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={mobileOpen}
           >
             {mobileOpen ? <CloseIcon size={20} /> : <MenuIcon size={20} />}

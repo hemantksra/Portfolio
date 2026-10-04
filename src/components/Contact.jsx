@@ -23,8 +23,23 @@ export default function Contact() {
       await navigator.clipboard.writeText(personalInfo.email);
       setCopied(true);
       setTimeout(() => setCopied(false), 2200);
-    } catch {
-      // Fallback: select text
+    } catch (error) {
+      // Fallback: select text and copy via native selection
+      const emailText = document.querySelector('.contact-card-handle');
+      if (emailText) {
+        try {
+          emailText.select();
+          window.navigator.clipboard.writeText(personalInfo.email);
+          setCopied(true);
+          setTimeout(() => setCopied(false), 2200);
+        } catch (selectionError) {
+          // User-friendly feedback for clipboard failure
+          alert('Unable to copy email. Please select the email address manually.');
+        }
+      } else {
+        // Fallback message if element not found
+        alert('Unable to copy email. The email address is: ' + personalInfo.email);
+      }
     }
   };
 
