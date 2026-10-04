@@ -1,9 +1,0 @@
-const handleCopy = async () => {
-  try {
-    await navigator.clipboard.writeText(personalInfo.email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2200);
-  } catch {
-    // Fallback: select text ⚠️ Incomplete fallback
-  }
-}
