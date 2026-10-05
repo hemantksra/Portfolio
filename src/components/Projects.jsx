@@ -1,6 +1,6 @@
 import React from "react";
 import { projectsData, personalInfo } from "../data/portfolioData";
-import { GithubIcon, ExternalLinkIcon, ArrowUpRightIcon } from "./Icons";
+import { GithubIcon, ArrowUpRightIcon } from "./Icons";
 
 export default function Projects() {
   return (

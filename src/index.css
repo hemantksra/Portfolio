@@ -2347,50 +2347,39 @@ code {
    Accessibility: Keyboard Focus States
 ========================================== */
 
+/* Base — applies to all interactive elements */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid var(--accent-color);
+  outline: 3px solid var(--terracotta);
   outline-offset: 4px;
-  border-radius: 6px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 4px rgba(217, 119, 87, 0.25);
 }
 
 /* Navbar */
-
 .nav-link:focus-visible,
 .nav-cta:focus-visible,
 .nav-icon-btn:focus-visible,
 .mobile-nav-link:focus-visible,
 .mobile-social-chip:focus-visible {
-  outline: 2px solid var(--accent-color);
+  outline: 3px solid var(--terracotta);
   outline-offset: 4px;
+  box-shadow: 0 0 0 4px rgba(217, 119, 87, 0.25);
 }
 
 /* Project Cards */
-
 .project-card a:focus-visible {
-  outline: 2px solid var(--accent-color);
+  outline: 3px solid var(--terracotta);
   outline-offset: 4px;
+  box-shadow: 0 0 0 4px rgba(217, 119, 87, 0.25);
 }
 
 /* Contact Section */
-
-.contact-link:focus-visible,
-.copy-email-btn:focus-visible {
-  outline: 2px solid var(--accent-color);
-  outline-offset: 4px;
-}
-
-/* ==========================================
-   Accessibility: Visible Keyboard Focus
-========================================== */
-
-a:focus-visible,
-button:focus-visible {
+.contact-card:focus-visible,
+.btn-copy:focus-visible {
   outline: 3px solid var(--terracotta);
   outline-offset: 4px;
-  border-radius: 8px;
-
-  box-shadow: 0 0 0 4px rgba(209, 107, 78, 0.25);
+  box-shadow: 0 0 0 4px rgba(217, 119, 87, 0.25);
 }

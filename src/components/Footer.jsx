@@ -1,6 +1,6 @@
 import React from 'react';
 import { personalInfo } from '../data/portfolioData';
-import { GithubIcon, LinkedinIcon, ArrowUpRightIcon } from './Icons';
+import { GithubIcon, LinkedinIcon } from './Icons';
 
 export default function Footer() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
