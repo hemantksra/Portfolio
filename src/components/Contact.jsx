@@ -18,6 +18,12 @@ export default function Contact() {
   });
   const [submitted, setSubmitted] = useState(false);
 
+  // Email validation regex (RFC 5322 compliant)
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  };
+
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(personalInfo.email);
@@ -25,7 +31,7 @@ export default function Contact() {
       setTimeout(() => setCopied(false), 2200);
     } catch (error) {
       // Fallback: select text and copy via native selection
-      const emailText = document.querySelector('.contact-card-handle');
+      const emailText = document.querySelector('.contact-card-content');
       if (emailText) {
         try {
           emailText.select();
@@ -45,13 +51,25 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!formState.name || !formState.message) return;
+    
+    // Validate all required fields including email format
+    if (!formState.name || !formState.email || !formState.message) return;
+    
+    // Validate email format
+    if (!validateEmail(formState.email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+    
+    // Sanitize message content to prevent XSS
+    const sanitizedMessage = formState.message.replace(/[<>]/g, '');
+    
     // Open mailto with pre-filled body
     const subject = encodeURIComponent(
       `Hey Hemant — message from ${formState.name}`,
     );
     const body = encodeURIComponent(
-      `Sender Email: ${formState.email}\n\n${formState.message}`,
+      `Sender Email: ${formState.email}\n\n${sanitizedMessage}`,
     );
     window.open(
       `mailto:${personalInfo.email}?subject=${subject}&body=${body}`,
